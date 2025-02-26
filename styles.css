@@ -1,0 +1,63 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f3f3f3, #e0e0e0);
+    margin: 0;
+}
+.container {
+    width: 90%;
+    max-width: 500px;
+}
+.box {
+    background: white;
+    border: 3px solid red;
+    margin: 15px 0;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.box.expanded {
+    border-color: pink;
+    padding: 25px;
+    transform: scale(1.05);
+}
+.price {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    text-align: right;
+}
+.current-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+.previous-price {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 14px;
+}
+.discount {
+    background-color: red;
+    color: white;
+    padding: 6px 12px;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.dropdown {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
